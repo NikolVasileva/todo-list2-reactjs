@@ -4,6 +4,6 @@ export default function TodoElement({
     completed
 }) {
     return(
-        <li>{title}</li>
+        <p> - {title}</p>
     )
 }
