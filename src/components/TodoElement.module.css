@@ -5,4 +5,5 @@
 
 .todo-element {
     cursor: pointer;
+    font-weight: 600;
 }
