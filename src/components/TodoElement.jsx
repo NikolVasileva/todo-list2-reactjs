@@ -3,7 +3,8 @@ import styles from "./TodoElement.module.css"
 export default function TodoElement({
     id,
     title,
-    completed
+    completed,
+    onClick
 }) {
 
     const classes = [styles["todo-element"]];
@@ -14,7 +15,7 @@ export default function TodoElement({
 
     return(
         // <p className={completed && styles["todo-completed"]}> - {title}</p>
-        <p className={classes.join(" ")}> - {title}</p>
+        <p onClick={() => onClick(id)} className={classes.join(" ")}> - {title}</p>
 
     )
 }
