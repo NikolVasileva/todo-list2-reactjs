@@ -5,7 +5,16 @@ export default function TodoElement({
     title,
     completed
 }) {
+
+    const classes = [styles["todo-element"]];
+
+    if(completed) {
+        classes.push(styles["todo-completed"])
+    }
+
     return(
-        <p className={completed && styles["todo-completed"]}> - {title}</p>
+        // <p className={completed && styles["todo-completed"]}> - {title}</p>
+        <p className={classes.join(" ")}> - {title}</p>
+
     )
 }

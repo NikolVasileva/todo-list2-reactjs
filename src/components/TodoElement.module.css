@@ -2,3 +2,7 @@
     text-decoration: line-through;
     background-color: yellow;
 }
+
+.todo-element {
+    cursor: pointer;
+}
